@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06E22FEE2BD296DF005DC177 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FED2BD296DF005DC177 /* HomeView.swift */; };
+		06E22FF02BD2988A005DC177 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FEF2BD2988A005DC177 /* VideoView.swift */; };
+		06E22FF22BD29985005DC177 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FF12BD29985005DC177 /* PodcastView.swift */; };
+		06E22FF42BD29A4B005DC177 /* RecomendacoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FF32BD29A4B005DC177 /* RecomendacoesView.swift */; };
+		06E22FF62BD29BAB005DC177 /* MetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FF52BD29BAB005DC177 /* MetaView.swift */; };
+		06E22FF82BD2AC39005DC177 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E22FF72BD2AC39005DC177 /* CustomTabView.swift */; };
 		C318EF522BD1F31A00A31A34 /* motivationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318EF512BD1F31A00A31A34 /* motivationAppApp.swift */; };
 		C318EF542BD1F31A00A31A34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C318EF532BD1F31A00A31A34 /* ContentView.swift */; };
 		C318EF562BD1F31C00A31A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C318EF552BD1F31C00A31A34 /* Assets.xcassets */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06E22FED2BD296DF005DC177 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		06E22FEF2BD2988A005DC177 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		06E22FF12BD29985005DC177 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
+		06E22FF32BD29A4B005DC177 /* RecomendacoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendacoesView.swift; sourceTree = "<group>"; };
+		06E22FF52BD29BAB005DC177 /* MetaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaView.swift; sourceTree = "<group>"; };
+		06E22FF72BD2AC39005DC177 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		C318EF4E2BD1F31A00A31A34 /* motivationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motivationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C318EF512BD1F31A00A31A34 /* motivationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivationAppApp.swift; sourceTree = "<group>"; };
 		C318EF532BD1F31A00A31A34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,8 +71,14 @@
 			children = (
 				C318EF512BD1F31A00A31A34 /* motivationAppApp.swift */,
 				C318EF532BD1F31A00A31A34 /* ContentView.swift */,
+				06E22FF32BD29A4B005DC177 /* RecomendacoesView.swift */,
+				06E22FF52BD29BAB005DC177 /* MetaView.swift */,
 				C36470BD2BD28DE30021F636 /* FrasesView.swift */,
+				06E22FF12BD29985005DC177 /* PodcastView.swift */,
 				C36470BF2BD28E140021F636 /* ViewModel.swift */,
+				06E22FEF2BD2988A005DC177 /* VideoView.swift */,
+				06E22FF72BD2AC39005DC177 /* CustomTabView.swift */,
+				06E22FED2BD296DF005DC177 /* HomeView.swift */,
 				C36470C12BD28E6E0021F636 /* Frases.swift */,
 				C318EF552BD1F31C00A31A34 /* Assets.xcassets */,
 				C318EF572BD1F31C00A31A34 /* Preview Content */,
@@ -147,8 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C318EF542BD1F31A00A31A34 /* ContentView.swift in Sources */,
+				06E22FF02BD2988A005DC177 /* VideoView.swift in Sources */,
 				C36470C22BD28E6E0021F636 /* Frases.swift in Sources */,
+				06E22FF62BD29BAB005DC177 /* MetaView.swift in Sources */,
+				06E22FF42BD29A4B005DC177 /* RecomendacoesView.swift in Sources */,
 				C318EF522BD1F31A00A31A34 /* motivationAppApp.swift in Sources */,
+				06E22FEE2BD296DF005DC177 /* HomeView.swift in Sources */,
+				06E22FF82BD2AC39005DC177 /* CustomTabView.swift in Sources */,
+				06E22FF22BD29985005DC177 /* PodcastView.swift in Sources */,
 				C36470C02BD28E140021F636 /* ViewModel.swift in Sources */,
 				C36470BE2BD28DE30021F636 /* FrasesView.swift in Sources */,
 			);
@@ -291,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

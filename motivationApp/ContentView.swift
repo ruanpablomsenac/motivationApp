@@ -8,34 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var startAnimation: Bool = false
+    
     var body: some View {
-        ZStack{
-            LinearGradient(
-                            colors: [
-                                .blue,
-                                .purple],
-                            startPoint: startAnimation ? .topLeading : .bottomLeading,
-                            endPoint: startAnimation ? .bottomTrailing : .topTrailing
-                        )
-            
-            VStack {
-                
-                Text("Motivation")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundStyle(.white)
-                
-                    
-            }
-            .padding()
-        }
-        .onAppear {
-                        withAnimation(.linear(duration: 5.0).repeatForever()) {
-                            startAnimation.toggle()
+        NavigationView{
+            TabView{
+                Group{
+                    HomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "house.fill")
                         }
+                    FrasesView()
+                        .tabItem {
+                            Label("Frases", systemImage: "list.bullet.rectangle")
+                        }
+                    VideoView()
+                        .tabItem {
+                            Label("Videos", systemImage: "movieclapper.fill")
+                        }
+                    PodcastView()
+                        .tabItem {
+                            Label("Podcasts", systemImage: "music.mic")
+                        }
+                    Group{
+                        RecomendacoesView()
+                            .tabItem {
+                                Label("Recomendações", systemImage: "hand.thumbsup.fill")
+                            }
+                        MetaView()
+                            .tabItem {
+                                Label("Metas", systemImage: "checkmark.seal.fill")
+                            }
                     }
-        .edgesIgnoringSafeArea(.bottom)
+                    .toolbarBackground(.blue, for: .tabBar)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarColorScheme(.light, for: .tabBar)
+                }
+                .toolbarBackground(.blue, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarColorScheme(.light, for: .tabBar)
+            }
+            .onAppear(){
+                //            UITabBar.appearance().backgroundColor = .lightGray
+                //            UITabBar.appearance().unselectedItemTintColor = .gray
+                
+            }
+        }.accentColor(.white)
     }
 }
 
